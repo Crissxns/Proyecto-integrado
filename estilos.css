@@ -39,5 +39,8 @@ h1{
     color: white;
 }
 .oculto{
-    visibility: hidden;
+    display: none;
+}
+.visible{
+    display: flex;
 }
