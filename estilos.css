@@ -44,3 +44,10 @@ h1{
 .visible{
     display: flex;
 }
+@media (max-width: 4300px) {
+    .primera, .segundo {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+}
