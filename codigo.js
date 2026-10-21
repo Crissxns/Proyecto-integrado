@@ -71,10 +71,15 @@ function iniciarSesion(){
         mensaje2.style.color = "red";
     }
     if (opcionesValidas) {
-        window.location.href = "bienvenido.html";
+        window.location.href = "";
     }
     else {
         mensaje2.textContent = "¡Usuario o contraseña incorrectos!";
         mensaje2.style.color = "red";
     }
+}
+function mostrar(id){
+    document.getElementById("div1").className = "oculto";
+    document.getElementById("div2").className = "oculto";
+    document.getElementById(id).className = "visible";
 }

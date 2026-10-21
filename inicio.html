@@ -8,23 +8,26 @@
     <script src="codigo.js"></script>
 </head>
 <body>
-        <div class="primera">
-        <div class="segundo">
-            <h1>Crear cuenta</h1>
-            <center>
+   
+    <div id="div1"class="visible">
+        <div class="principal">
+            <div class="primera">
+                <center><h1>Crear cuenta</h1></center>
+                <center>
                 <p>Cree su cuenta para guardar sus datos</p>
                 <input type="text" id="nuevoUsuario" placeholder="Crear usuario">
                 <br>
                 <input type="password" id="nuevaContrasena" placeholder="Crear contraseña">
                 <br>
-                <button onclick="registrar()">Registrarse</button>
+                <button onclick="registrar()"><a href="#" onclick="mostrar('div2')">Registrarse</a></button>
                 <p id="mensaje1"></p>
-            </center>
+                </center>
+            </div>
         </div>
-
-
-        <div class="principal">
-            <h1>Inicio de Sesión</h1>
+    </div>
+    <div id="div2" class="oculto">
+        <div class="segundo">
+            <center><h1>Inicio de Sesión</h1></center>
             <center>
                 <p>Ingrese su usuario y contraseña para poder continuar</p>
                 <input type="text" id="usuario" placeholder="Nombre de usuario">
@@ -36,5 +39,6 @@
             </center>
         </div>
     </div>
+    
 </body>
 </html>
