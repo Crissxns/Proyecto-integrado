@@ -3,10 +3,16 @@ body{
 }
 .principal{
     display: flex;
+    width: 800px;
+    height: 450px;
+    margin-top: 150px;
+    border-radius: 40px;
+    padding: 40px;
+    margin: 0 auto;
 }
 .primera{
-    width: 500px;
-    height: 200px;
+    width: 800px;
+    height: 450px;
     background-color: #0096c7;
     margin: 0 auto;
     margin-top: 100px;
@@ -14,8 +20,8 @@ body{
     padding: 40px;
 }
 .segundo{
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 450px;
     background-color: #0096c7;
     margin: 0 auto;
     margin-top: 100px;
