@@ -71,7 +71,7 @@ function iniciarSesion(){
         mensaje2.style.color = "red";
     }
     if (opcionesValidas) {
-        window.location.href = "";
+        window.location.href = "infoprincipal.html";
     }
     else {
         mensaje2.textContent = "¡Usuario o contraseña incorrectos!";
