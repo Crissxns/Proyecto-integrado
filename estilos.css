@@ -14,7 +14,7 @@ body{
     height: 350px;
     background-color: #003049;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 5px;
 }
 .segundo{
@@ -22,7 +22,7 @@ body{
     height: 350px;
     background-color: #003049;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 5px;
 }
 button{
@@ -61,7 +61,7 @@ p{
     height: 350px;
     background-color: #003049;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 5px;
     
 }
@@ -71,13 +71,14 @@ p{
     height: 350px;
     background-color: #003049;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 5px;
 }
 .eslogan{
-    background-color: #205069;
+    background-color: #00b4d8;
     color: white;
-    width: 500px;
+    width: 450px;
+    margin-top: 10px;
 }
 @media (max-width: 4300px) {
     .primera, .segundo {
