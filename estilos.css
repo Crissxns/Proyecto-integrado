@@ -74,6 +74,11 @@ p{
     margin-top: 10px;
     border-radius: 5px;
 }
+.eslogan{
+    background-color: #205069;
+    color: white;
+    width: 500px;
+}
 @media (max-width: 4300px) {
     .primera, .segundo {
         width: 90%;
