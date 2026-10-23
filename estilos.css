@@ -1,32 +1,29 @@
 body{
-    background: linear-gradient(to right, #0077b6, #0096c7);
+    background: linear-gradient(to right, #003049, #0096c7);
 }
 .principal{
     display: flex;
-    width: 800px;
-    height: 450px;
+    width: 480px;
+    height: 350px;
     margin-top: 150px;
     border-radius: 40px;
-    padding: 40px;
     margin: 0 auto;
 }
 .primera{
-    width: 800px;
-    height: 450px;
-    background-color: #0096c7;
+    width: 480px;
+    height: 350px;
+    background-color: #003049;
     margin: 0 auto;
-    margin-top: 100px;
-    border-radius: 20px;
-    padding: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 .segundo{
-    width: 800px;
-    height: 450px;
-    background-color: #0096c7;
+    width: 480px;
+    height: 350px;
+    background-color: #003049;
     margin: 0 auto;
-    margin-top: 100px;
-    border-radius: 20px;
-    padding: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 button{
     background-color: #0077b6;
@@ -51,12 +48,31 @@ button{
 h1{
     text-align: center;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .oculto{
     display: none;
+    width: 480px;
+    height: 350px;
+    background-color: #003049;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    
 }
 .visible{
     display: flex;
+    width: 480px;
+    height: 350px;
+    background-color: #003049;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 @media (max-width: 4300px) {
     .primera, .segundo {
