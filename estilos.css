@@ -80,11 +80,14 @@ p{
     width: 450px;
     margin-top: 10px;
 }
-@media (max-width: 430px) {
+@media (max-width: 599px) {
     .primera, .segundo {
-        width: 95%;
-        height: auto;
-        padding: 15px;
+        width: 90%;             /* Se adapta fluidamente: ocupa el 90% en cualquier ancho */
+        max-width: 450px;       
+        height: auto;          
+        padding: 20px;          
+        margin: 15px auto;      
+        box-sizing: border-box; 
     }
 }
 
