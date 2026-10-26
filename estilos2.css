@@ -1,4 +1,9 @@
 body{
-    background-color: blue;
-    color: azure;
+    background: linear-gradient(to right, #48CAE4, #CAF0F8);
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.titulo{
+    color: #03045E ;
 }

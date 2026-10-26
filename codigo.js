@@ -10,7 +10,7 @@ function registrar() {
         mensaje1.textContent = "¡Completa todos los campos!";
         mensaje1.style.color = "red";
 
-        mensaje.textContent = "¡Completa todos los campos!";
+        mensaje1.textContent = "¡Completa todos los campos!";
         mensaje.style.color = "red";
         return; 
     } 
