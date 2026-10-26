@@ -82,7 +82,7 @@ p{
 }
 @media (max-width: 599px) {
     .primera, .segundo {
-        width: 90%;             /* Se adapta fluidamente: ocupa el 90% en cualquier ancho */
+        width: 90%;             
         max-width: 450px;       
         height: auto;          
         padding: 20px;          
