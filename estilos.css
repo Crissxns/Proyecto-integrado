@@ -82,8 +82,8 @@ p{
 }
 @media (max-width: 599px) {
     .primera, .segundo {
-        width: 95%;
-        max-width: 100%;
+        width: 400%;
+        max-width: 400%;
         height: auto;
         padding: 15px;
         margin: 10px auto;
