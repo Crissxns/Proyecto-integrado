@@ -82,13 +82,13 @@ p{
 }
 @media (max-width: 599px) {
     .primera, .segundo {
-    width: 90%;             
-    max-width: 450px;       
-    height: auto;          
-    padding: 20px;          
-    margin: 15px auto;      
-    box-sizing: border-box; 
-}
+        width: 95%;
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
