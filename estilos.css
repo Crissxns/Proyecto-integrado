@@ -80,10 +80,10 @@ p{
     width: 450px;
     margin-top: 10px;
 }
-@media (max-width: 400px) {
+@media (max-width: 599px) {
     .primera, .segundo {
-        width: 400%;
-        max-width: 400%;
+        width: 100%;
+        max-width: 100%;
         height: auto;
         padding: 15px;
         margin: 10px auto;
