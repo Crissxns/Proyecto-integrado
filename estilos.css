@@ -80,7 +80,7 @@ p{
     width: 450px;
     margin-top: 10px;
 }
-@media (max-width: 599px) {
+@media(min-width: 300px) and (max-width: 924px) {
     .primera, .segundo {
         width: 400%;
         max-width: 400%;
