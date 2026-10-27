@@ -83,13 +83,10 @@ p{
     background-image: url('imagenes/fondo3.jpg'); 
     background-repeat: no-repeat; 
     background-position: center; 
-    
     /* Ajusta la imagen para que cubra todo el espacio sin deformarse */
     background-size: cover; 
-    
-    /* 5. Da una altura y ancho para que el contenedor sea visible */
     width: 101%;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    height: 100vh; 
 }
 @media (max-width: 599px) {
     .primera, .segundo {
