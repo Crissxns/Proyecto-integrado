@@ -100,6 +100,29 @@ li {
 li::marker {
     color: #00B4D8;
 }
+.contactanos{
+    background-color: rgb(30, 4, 63);
+    color: white;
+    height: 100px;
+     margin: 0 auto;
+    margin-top: 35px;
+    border-radius: 35px;
+}
+.contactos{
+    color: white;
+    text-align: center;
+    display: block;
+}
+.insta{
+    color: white;
+    text-align: center;
+    display: block;
+}
+.imagen{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
 
 @media (max-width: 1100px) {
     .principal {
