@@ -1,9 +1,137 @@
-body{
-    background: linear-gradient(to right, #48CAE4, #CAF0F8);
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #03045E;
+
+    background:
+        radial-gradient(circle at top right,
+            #0077B6 0%,
+            transparent 40%),
+        linear-gradient(135deg,
+            #03045E,
+            #023E8A,
+            #0077B6);
 }
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 45%;
 }
-.titulo{
-    color: #03045E ;
+
+.titulo {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    margin: 15px 0 10px;
+    text-shadow: 0 0 18px rgba(0, 180, 216, 0.5);
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 4px;
+    background-color: #00B4D8;
+    border-radius: 10px;
+    margin: 15px auto 45px;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.informacion,
+.mision,
+.vision,
+.valores {
+    flex: 1;
+    min-width: 0;
+    padding: 24px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 18px;
+    border-top: 5px solid #00B4D8;
+}
+
+.informacion:hover,
+.mision:hover,
+.vision:hover,
+.valores:hover {
+    box-shadow: 0 16px 35px rgba(0, 180, 216, 0.25);
+}
+
+h2 {
+    color: #0077B6;
+    text-align: center;
+    font-size: 24px;
+    margin: 5px 0 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #90E0EF;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #243B53;
+    overflow-wrap: anywhere;
+}
+
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+li::marker {
+    color: #00B4D8;
+}
+
+@media (max-width: 1100px) {
+    .principal {
+        flex-wrap: wrap;
+    }
+
+    .informacion,
+    .mision,
+    .vision,
+    .valores {
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 18px;
+    }
+
+    .titulo {
+        font-size: 34px;
+        letter-spacing: 3px;
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    .informacion,
+    .mision,
+    .vision,
+    .valores {
+        width: 100%;
+    }
 }
