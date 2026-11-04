@@ -78,9 +78,16 @@ p{
     background-color: #00b4d8;
     color: white;
     width: 450px;
-    margin-top: 10px;
 }
-
+.superprincipal{
+    background-image: url('imagenes/fondo3.jpg'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    /* Ajusta la imagen para que cubra todo el espacio sin deformarse */
+    background-size: cover; 
+    width: 101%;
+    height: 100vh; 
+}
 @media (max-width: 599px) {
     .primera, .segundo {
         width: 100%;
