@@ -54,73 +54,51 @@ body {
 .valores:hover {
     box-shadow: 0 16px 35px rgba(0, 180, 216, 0.25);
 }
+.barra {
+    width: 100%;
+    background-color: #03045E;
+    padding: 20px 75px;
+    margin: 0;
+    gap: 0px;
+}
+.barra .nav-link:hover {
+    color: #00B4D8;
+}
+.encabezado {
+    padding: 100px 100px;
+}
+.barra .nav-link {
+    color: white;
+    transition: 0.3s;
+}
+#info{
+    color: #0077B6;
+    font-family: Arial, sans-serif;
+}
 
 @media (max-width: 768px) {
-
     .titulo {
         font-size: 35px;
     }
-
     .logo {
         width: 160px;
     }
-
     .informacion {
         width: 94%;
         padding: 20px;
     }
-
     .informacion h2 {
         font-size: 24px;
     }
-
     .informacion p {
         font-size: 15px;
     }
-
     .contactanos {
         width: 94%;
     }
-
-}
-
-
-@media (max-width: 480px) {
-
-    .barra {
-        padding: 10px 15px;
-    }
-
-    .titulo {
-        font-size: 28px;
-        letter-spacing: 2px;
-    }
-
-    .logo {
-        width: 130px;
-    }
-
-    .informacion {
-        width: 92%;
-        padding: 16px;
-    }
-
-    .informacion h2 {
-        font-size: 21px;
-    }
-
-    .informacion p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .contactanos {
-        width: 92%;
-        padding: 18px;
-    }
-
-    .contactos {
-        font-size: 23px;
+    .navbar_barra {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
