@@ -55,37 +55,72 @@ body {
     box-shadow: 0 16px 35px rgba(0, 180, 216, 0.25);
 }
 
-@media (max-width: 1100px) {
-    .principal {
-        flex-wrap: wrap;
+@media (max-width: 768px) {
+
+    .titulo {
+        font-size: 35px;
     }
 
-    .informacion,
-    .mision,
-    .vision,
-    .valores {
-        flex: 1 1 40%;
+    .logo {
+        width: 160px;
     }
+
+    .informacion {
+        width: 94%;
+        padding: 20px;
+    }
+
+    .informacion h2 {
+        font-size: 24px;
+    }
+
+    .informacion p {
+        font-size: 15px;
+    }
+
+    .contactanos {
+        width: 94%;
+    }
+
 }
 
-@media (max-width: 650px) {
-    body {
-        padding: 18px;
+
+@media (max-width: 480px) {
+
+    .barra {
+        padding: 10px 15px;
     }
 
     .titulo {
-        font-size: 34px;
-        letter-spacing: 3px;
+        font-size: 28px;
+        letter-spacing: 2px;
     }
 
-    .principal {
-        flex-direction: column;
+    .logo {
+        width: 130px;
     }
 
-    .informacion,
-    .mision,
-    .vision,
-    .valores {
-        width: 100%;
+    .informacion {
+        width: 92%;
+        padding: 16px;
     }
+
+    .informacion h2 {
+        font-size: 21px;
+    }
+
+    .informacion p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .contactanos {
+        width: 92%;
+        padding: 18px;
+    }
+
+    .contactos {
+        font-size: 23px;
+    }
+
 }
