@@ -83,50 +83,35 @@ p{
     background-image: url('imagenes/fondo3.jpg'); 
     background-repeat: no-repeat; 
     background-position: center; 
-    /* Ajusta la imagen para que cubra todo el espacio sin deformarse */
     background-size: cover; 
     width: 101%;
     height: 100vh; 
 }
-@media (max-width: 599px) {
-    .primera, .segundo {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        padding: 15px;
-        margin: 10px auto;
-        box-sizing: border-box;
-    }
+.primera, .segundo, .principal, .eslogan {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 10px auto;
+    box-sizing: border-box;
 }
 
 @media (min-width: 300px) and (max-width: 414px) {
-    .primera, .segundo, .principal,.eslogan{
-        width: 90%;  
-        height: auto;
+    .primera, .segundo, .principal, .eslogan {
         padding: 10px;
     }
 }
 
-@media (min-width: 414px) and (max-width: 599px) {
-    .primera, .segundo, .principal,.eslogan{
-        width: 90%;  
-        height: auto;
-        padding: 20px;
-    }
-}
-
 @media (min-width: 600px) and (max-width: 900px) {
-    .primera, .segundo,.principal,.eslogan {
-        width: 90%;  
-        height: auto;
+    .primera, .segundo, .principal, .eslogan {
+        width: 90%;
         padding: 20px;
     }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
-    .primera, .segundo,.principal,.eslogan {
-        width: 80%;  
-        height: auto;
+    .primera, .segundo, .principal, .eslogan {
+        width: 80%;
         padding: 25px;
     }
 }
