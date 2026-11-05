@@ -102,6 +102,14 @@ hr{
     border: none;               
     border-radius: 4px;
 }
+.superprincipal{
+    background-image: url('imagenes/fondo3.jpg'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    width: 100%;
+    min-height: 100vh; 
+}
 @media (max-width: 768px) {
     body {
         padding: 0;
