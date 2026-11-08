@@ -9,7 +9,13 @@ body {
     color: #03045E;
     background: linear-gradient(to right, #03045E, #0077B6);
 }
-
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 .barra {
     background: #03045E;
     padding: 12px 25px;
@@ -59,9 +65,8 @@ body {
     border-top: 7px solid #00B4D8;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    transition: 0.3s;
+    
 }
-
 .cabecera-seccion {
     display: flex;
     align-items: center;
@@ -69,7 +74,6 @@ body {
     gap: 15px; 
     margin-bottom: 20px;
 }
-
 .mision h2,
 .vision h2,
 .valores h2 {
@@ -77,23 +81,18 @@ body {
     color: #0077B6;
     font-size: 28px;
 }
-
 .mision p,
 .vision p,
 .valores p {
     font-size: 18px;
-    line-height: 1.8;
     text-align: justify;
 }
-
-
 .mision img,
 .vision img,
 .valores img {
     display: block;
     width: 75px;      
     height: 75px;    
-    object-fit: cover;
     margin: 0;       
     border-radius: 50%; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -117,8 +116,6 @@ body {
     border-left: 5px solid #00B4D8;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
-
-
 
 .parrafo3 p,
 .parrafo4 p,
@@ -160,6 +157,15 @@ hr{
     background-size: cover; 
     width: 101%;
     min-height: 100vh; 
+}
+.insta img{
+    display: block;
+    width: 25px;      
+    height: 25px;    
+    object-fit: cover;
+    margin: 0;       
+    border-radius: 25%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 @media (max-width: 768px) {
 

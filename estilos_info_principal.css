@@ -107,7 +107,22 @@ hr{
     width: 100%;
     min-height: 100vh; 
 }
-
+.insta img{
+    display: block;
+    width: 25px;      
+    height: 25px;    
+    object-fit: cover;
+    margin: 0;       
+    border-radius: 25%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.cabecera-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
 @media (max-width: 768px) {
 
     .titulo {
