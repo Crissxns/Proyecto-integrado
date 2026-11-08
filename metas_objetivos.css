@@ -133,6 +133,15 @@ hr{
     border-radius: 25%; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
+.tiktok img{
+    display: block;
+    width: 25px;      
+    height: 25px;    
+    object-fit: cover;
+    margin: 0;       
+    border-radius: 25%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
 .superprincipal{
     background-image: url('imagenes/fondo3.jpg'); 
     background-repeat: no-repeat; 
