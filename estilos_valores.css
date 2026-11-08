@@ -2,7 +2,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -63,19 +62,20 @@ body {
     transition: 0.3s;
 }
 
-.mision:hover,
-.vision:hover,
-.valores:hover {
-    transform: translateY(-4px);
+.cabecera-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 20px;
 }
 
 .mision h2,
 .vision h2,
 .valores h2 {
-    text-align: center;
+    margin: 0; 
     color: #0077B6;
     font-size: 28px;
-    margin-bottom: 20px;
 }
 
 .mision p,
@@ -86,15 +86,17 @@ body {
     text-align: justify;
 }
 
+
 .mision img,
 .vision img,
 .valores img {
     display: block;
-    width: 25%;
-    max-width: 200  px;
-    height: auto;
-    margin: 25px auto;
-    border-radius: 12px;
+    width: 75px;      
+    height: 75px;    
+    object-fit: cover;
+    margin: 0;       
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 .lista-valores {
@@ -116,9 +118,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
-.parrafo7 {
-    grid-column: span 2;
-}
+
 
 .parrafo3 p,
 .parrafo4 p,
