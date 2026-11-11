@@ -149,10 +149,6 @@ body {
         font-size: 35px;
     }
 
-    .logo {
-        width: 160px;
-    }
-
     .informacion {
         width: 94%;
         padding: 20px;
@@ -182,10 +178,6 @@ body {
     .titulo {
         font-size: 28px;
         letter-spacing: 2px;
-    }
-
-    .logo {
-        width: 130px;
     }
 
     .informacion {
