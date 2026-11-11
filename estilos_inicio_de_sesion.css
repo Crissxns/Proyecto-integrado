@@ -1,119 +1,174 @@
-body{
+
+body {
     background: linear-gradient(to right, #003049, #0096c7);
+    margin: 0;
 }
-.principal{
+
+.principal {
     display: flex;
-    width: 480px;
-    height: 350px;
-    margin-top: 150px;
-    border-radius: 40px;
-    margin: 0 auto;
-}
-.primera{
-    width: 480px;
-    height: 500px;
-    background-color: #003049;
-    margin: 0 auto;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-.segundo{
-    width: 480px;
-    height: 500px;
-    background-color: #003049;
-    margin: 0 auto;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-button{
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-#imagenlogo{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 50%;
-    display: block;
-}
-h1{
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-p{
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.oculto{
-    display: none;
-    width: 480px;
-    height: 350px;
-    background-color: #003049;
-    margin: 0 auto;
-    margin-top: 5px;
-    border-radius: 5px;
-    
-}
-.visible{
-    display: flex;
-    width: 480px;
-    height: 350px;
-    background-color: #003049;
-    margin: 0 auto;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-.eslogan{
-    background-color: #00b4d8;
-    color: white;
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-}
-.superprincipal{
-    background-image: url('imagenes/fondo3.jpg'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover; 
-    width: 100%;
-    min-height: 100vh; 
-}
-.primera, .segundo, .principal, .eslogan {
     width: 90%;
-    max-width: 100%;
+    max-width: 480px;
     height: auto;
-    padding: 15px;
-    margin: 10px auto;
+    margin: 0 auto;
+    border-radius: 40px;
     box-sizing: border-box;
 }
 
-@media (min-width: 300px) and (max-width: 414px) {
-    .primera, .segundo, .principal, .eslogan {
+.primera,
+.segundo {
+    width: 100%;
+    min-height: 470px;
+    height: auto;
+    background-color: #003049;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    width: 220px;
+    height: 58px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    margin: 12px auto;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0096c7;
+}
+
+#imagenlogo {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mensaje1,
+#mensaje2 {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 30px;
+    margin: 15px auto 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.oculto {
+    display: none;
+    width: 90%;
+    max-width: 480px;
+    height: auto;
+    background-color: #003049;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.visible {
+    display: flex;
+    width: 90%;
+    max-width: 480px;
+    min-height: 500px;
+    height: auto;
+    background-color: #003049;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.eslogan {
+    background-color: #00b4d8;
+    color: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.superprincipal {
+    background-image: url('imagenes/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+input {
+    width: 80%;
+    max-width: 300px;
+    height: 32px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .principal,
+    .visible,
+    .oculto {
+        width: 95%;
+    }
+
+    .primera,
+    .segundo {
         padding: 10px;
+    }
+
+    button {
+        width: 220px;
+        max-width: 90%;
+    }
+
+    .eslogan {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-    .primera, .segundo, .principal, .eslogan {
+    .principal,
+    .visible,
+    .oculto {
         width: 90%;
-        padding: 20px;
     }
 }
 
-@media (min-width: 901px) and (max-width: 1200px) {
-    .primera, .segundo, .principal, .eslogan {
-        width: 80%;
-        padding: 25px;
+@media (min-width: 901px) {
+    .principal,
+    .visible,
+    .oculto {
+        max-width: 480px;
     }
 }
