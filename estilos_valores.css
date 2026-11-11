@@ -19,8 +19,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
-
-
 .barra {
     width: 100%;
     background-color: #03045E;
@@ -249,26 +247,9 @@ hr {
     .valores p {
         font-size: 16px;
     }
-
+    
     .barra {
-        padding: 8px 2px;
-    }
-
-    .barra .nav-link,
-    .barra .nav-link:focus,
-    .barra .nav-link.active,
-    .barra .nav-link.active:focus {
-        font-size: clamp(10px, 2.8vw, 15px);
-        padding: 8px 4px;
-        color: white !important;
-    }
-
-    .barra .nav-link:hover {
-        color: #00B4D8 !important;
-    }
-
-    .barra .navbar-nav {
-        gap: 0;
+        padding: 10px 15px;
     }
 }
 
