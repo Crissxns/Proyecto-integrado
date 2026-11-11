@@ -26,6 +26,24 @@ body {
 .barra .nav-link:hover {
     color: #00B4D8;
 }
+.barra .container-fluid {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+.barra .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
 
 
 .encabezado {
@@ -45,7 +63,6 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    
 }
 
 
@@ -94,50 +111,48 @@ body {
     color: #90E0EF;
     font-size: 17px;
 }
-hr{
-    background-color: #e0e4e9;
-    height: 8px;                
-    border: none;               
-    border-radius: 4px;
-}
-.superprincipal{
-    background-image: url('imagenes/fondo3.jpg'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover; 
-    width: 100%;
-    min-height: 100vh; 
-}
-.insta img{
-    display: block;
-    width: 25px;      
-    height: 25px;    
-    object-fit: cover;
-    margin: 0;       
-    border-radius: 25%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-.tiktok img{
-    display: block;
-    width: 25px;      
-    height: 25px;    
-    object-fit: cover;
-    margin: 0;       
-    border-radius: 25%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-.cabecera-seccion {
+
+.contactanos .cabecera-seccion {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 15px; 
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
 }
+
+.contactanos img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 0;
+}
+
+.contactanos .insta,
+.contactanos .tiktok {
+    font-size: 16px;
+}
+
+.contactanos a {
+    color: #90E0EF;
+    text-decoration: none;
+}
+
+.contactanos a:hover {
+    color: #00B4D8;
+}
+
+
+
 @media (max-width: 768px) {
 
     .titulo {
         font-size: 35px;
     }
+
+    .logo {
+        width: 160px;
+    }
+
     .informacion {
         width: 94%;
         padding: 20px;
@@ -169,6 +184,9 @@ hr{
         letter-spacing: 2px;
     }
 
+    .logo {
+        width: 130px;
+    }
 
     .informacion {
         width: 92%;

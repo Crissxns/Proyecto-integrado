@@ -10,26 +10,41 @@ body {
     color: #03045E;
     background: linear-gradient(to right, #03045E, #0077B6);
 }
+
 .logo {
     display: block;
     margin: 0 auto 20px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
 }
+
 .barra {
     background: #03045E;
     padding: 12px 25px;
 }
 
-.barra .nav-link {
-    color: white;
+.barra .navbar-nav {
+    margin-left: auto;
+    gap: 10px;
+}
+
+.barra .nav-link,
+.barra .nav-link:focus,
+.barra .nav-link.active,
+.barra .nav-link.active:focus {
+    color: white !important;
     font-size: 19px;
     transition: 0.3s;
 }
 
 .barra .nav-link:hover {
-    color: #00B4D8;
+    color: #00B4D8 !important;
+}
+
+.barra .navbar-toggler {
+    border-color: white;
 }
 
 .ts {
@@ -82,6 +97,26 @@ img {
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+.cuadros .cabecera-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.cuadros .cabecera-seccion img {
+    display: block;
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
 .contactanos {
     background-color: #03045E;
     color: white;
@@ -94,69 +129,62 @@ img {
 }
 
 .contactos {
+    color: white;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-.insta p {
-    color: #90E0EF;
-    font-size: 17px;
-}
-hr{
+.contactanos hr {
     background-color: #e0e4e9;
-    height: 8px;                
-    border: none;               
+    height: 4px;
+    border: none;
     border-radius: 4px;
 }
-.cabecera-seccion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px; 
-    margin-bottom: 20px;
-}
-.cuadros img {
-    display: block;
-    width: 75px;      
-    height: 75px;    
-    object-fit: cover;
-    margin: 0;       
-    border-radius: 50%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-.insta img{
-    display: block;
-    width: 25px;      
-    height: 25px;    
-    object-fit: cover;
-    margin: 0;       
-    border-radius: 25%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-.tiktok img{
-    display: block;
-    width: 25px;      
-    height: 25px;    
-    object-fit: cover;
-    margin: 0;       
-    border-radius: 25%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-.superprincipal{
-    background-image: url('imagenes/fondo3.jpg'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover; 
-    width: 100%;
-    min-height: 100vh; 
-}
-@media (max-width: 768px) {
-    body {
-        padding: 0;
-    }
 
+.contactanos .cabecera-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contactanos .cabecera-seccion img {
+    display: block;
+    width: 25px !important;
+    min-width: 25px;
+    max-width: 25px;
+    height: 25px !important;
+    margin: 0 !important;
+    padding: 0;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.contactanos a {
+    color: #90E0EF;
+    text-decoration: none;
+}
+
+.contactanos a:hover {
+    color: #00B4D8;
+}
+
+.superprincipal {
+    background-image: url('imagenes/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
     .ts {
         font-size: 23px;
+        padding: 20px 12px;
     }
 
     .cuadros {
@@ -164,8 +192,56 @@ hr{
         padding: 20px;
     }
 
+    .cuadros .cabecera-seccion {
+        flex-direction: column;
+        text-align: center;
+    }
+
     h2 {
         font-size: 20px;
     }
+
+    .contactanos {
+        width: 94%;
+    }
+
+    .barra .nav-link {
+        font-size: 16px;
+    }
 }
 
+@media (max-width: 480px) {
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .ts {
+        font-size: 21px;
+    }
+
+    .contactanos {
+        padding: 18px;
+    }
+
+    .contactanos .cabecera-seccion {
+        font-size: 14px;
+        gap: 8px;
+    }
+}
+@media (max-width: 991px) {
+    .barra .navbar-collapse {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .barra .navbar-nav {
+        align-items: flex-end;
+        gap: 0;
+    }
+
+    .barra .nav-link {
+        text-align: right;
+        padding: 10px 15px;
+    }
+}

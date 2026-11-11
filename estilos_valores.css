@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -9,27 +10,61 @@ body {
     color: #03045E;
     background: linear-gradient(to right, #03045E, #0077B6);
 }
+
 .logo {
     display: block;
     margin: 0 auto 20px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-}
-.barra {
-    background: #03045E;
-    padding: 12px 25px;
+    object-fit: cover;
 }
 
-.barra .nav-link {
-    color: white;
+.barra {
+    background: #03045E;
+    padding: 12px 10px;
+    width: 100%;
+}
+.barra .container-fluid {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.barra .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+
+.barra .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+.barra .nav-link,
+.barra .nav-link:focus,
+.barra .nav-link.active,
+.barra .nav-link.active:focus {
+    color: white !important;
     font-size: 19px;
-    margin-left: 15px;
+    padding: 10px 12px;
+    white-space: nowrap;
     transition: 0.3s;
 }
 
 .barra .nav-link:hover {
-    color: #00B4D8;
+    color: #00B4D8 !important;
+}
+
+.barra .navbar-toggler {
+    display: none !important;
 }
 
 .contenedor {
@@ -65,37 +100,41 @@ body {
     border-top: 7px solid #00B4D8;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    
 }
+
 .cabecera-seccion {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; 
+    gap: 15px;
     margin-bottom: 20px;
 }
+
 .mision h2,
 .vision h2,
 .valores h2 {
-    margin: 0; 
+    margin: 0;
     color: #0077B6;
     font-size: 28px;
 }
+
 .mision p,
 .vision p,
 .valores p {
     font-size: 18px;
     text-align: justify;
 }
+
 .mision img,
 .vision img,
 .valores img {
     display: block;
-    width: 75px;      
-    height: 75px;    
-    margin: 0;       
-    border-radius: 50%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .lista-valores {
@@ -124,6 +163,7 @@ body {
 .parrafo7 p {
     margin: 0;
 }
+
 .contactanos {
     background-color: #03045E;
     color: white;
@@ -140,46 +180,54 @@ body {
     margin-bottom: 15px;
 }
 
-.insta p {
-    color: #90E0EF;
-    font-size: 17px;
+.contactanos .cabecera-seccion {
+    color: white;
 }
-hr{
+
+.contactanos a {
+    color: #90E0EF;
+    text-decoration: none;
+}
+
+.contactanos a:hover {
+    color: #00B4D8;
+}
+
+hr {
     background-color: #e0e4e9;
-    height: 8px;                
-    border: none;               
+    height: 8px;
+    border: none;
     border-radius: 4px;
 }
-.superprincipal{
-    background-image: url('imagenes/fondo3.jpg'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover; 
-    width: 101%;
-    min-height: 100vh; 
-}
-.insta img{
-    display: block;
-    width: 25px;      
-    height: 25px;    
-    object-fit: cover;
-    margin: 0;       
-    border-radius: 25%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-.tiktok img{
-    display: block;
-    width: 25px;      
-    height: 25px;    
-    object-fit: cover;
-    margin: 0;       
-    border-radius: 25%; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-@media (max-width: 768px) {
 
+.superprincipal {
+    background-image: url('imagenes/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.insta img,
+.tiktok img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 25%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
     .contenedor {
         padding: 10px;
+    }
+
+    .logo {
+        width: 130px;
+        height: 130px;
     }
 
     .titulo h1 {
@@ -213,4 +261,36 @@ hr{
         font-size: 16px;
     }
 
+    .barra {
+        padding: 8px 2px;
+    }
+
+    .barra .nav-link,
+    .barra .nav-link:focus,
+    .barra .nav-link.active,
+    .barra .nav-link.active:focus {
+        font-size: clamp(10px, 2.8vw, 15px);
+        padding: 8px 4px;
+        color: white !important;
+    }
+
+    .barra .nav-link:hover {
+        color: #00B4D8 !important;
+    }
+
+    .barra .navbar-nav {
+        gap: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .barra .nav-link,
+    .barra .nav-link.active {
+        font-size: 9px;
+        padding: 8px 2px;
+    }
+
+    .titulo h1 {
+        font-size: 20px;
+    }
 }
