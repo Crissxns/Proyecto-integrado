@@ -19,21 +19,29 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
-
 .barra {
-    background: #03045E;
-    padding: 12px 10px;
     width: 100%;
+    background-color: #03045E;
+    padding: 12px 25px;
+    margin: 0;
+    gap: 0px;
+}
+
+.barra .nav-link {
+    color: white;
+    transition: 0.3s;
+}
+
+.barra .nav-link:hover {
+    color: #00B4D8;
 }
 .barra .container-fluid {
     display: flex;
     justify-content: flex-end;
-    padding: 0 20px;
 }
 
 .barra .navbar-collapse {
     display: flex !important;
-    flex-basis: auto;
     justify-content: flex-end;
 }
 
@@ -42,29 +50,8 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
     gap: 10px;
-    flex-wrap: nowrap;
-    margin: 0;
-}
-
-.barra .nav-link,
-.barra .nav-link:focus,
-.barra .nav-link.active,
-.barra .nav-link.active:focus {
-    color: white !important;
-    font-size: 19px;
-    padding: 10px 12px;
-    white-space: nowrap;
-    transition: 0.3s;
-}
-
-.barra .nav-link:hover {
-    color: #00B4D8 !important;
-}
-
-.barra .navbar-toggler {
-    display: none !important;
+    margin-left: auto;
 }
 
 .contenedor {
@@ -260,26 +247,9 @@ hr {
     .valores p {
         font-size: 16px;
     }
-
+    
     .barra {
-        padding: 8px 2px;
-    }
-
-    .barra .nav-link,
-    .barra .nav-link:focus,
-    .barra .nav-link.active,
-    .barra .nav-link.active:focus {
-        font-size: clamp(10px, 2.8vw, 15px);
-        padding: 8px 4px;
-        color: white !important;
-    }
-
-    .barra .nav-link:hover {
-        color: #00B4D8 !important;
-    }
-
-    .barra .navbar-nav {
-        gap: 0;
+        padding: 10px 15px;
     }
 }
 

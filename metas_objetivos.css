@@ -20,31 +20,40 @@ body {
     object-fit: cover;
 }
 
+
 .barra {
-    background: #03045E;
+    width: 100%;
+    background-color: #03045E;
     padding: 12px 25px;
+    margin: 0;
+    gap: 0px;
 }
 
-.barra .navbar-nav {
-    margin-left: auto;
-    gap: 10px;
-}
-
-.barra .nav-link,
-.barra .nav-link:focus,
-.barra .nav-link.active,
-.barra .nav-link.active:focus {
-    color: white !important;
-    font-size: 19px;
+.barra .nav-link {
+    color: white;
     transition: 0.3s;
 }
 
 .barra .nav-link:hover {
-    color: #00B4D8 !important;
+    color: #00B4D8;
+}
+.barra .container-fluid {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.barra .navbar-toggler {
-    border-color: white;
+.barra .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+.barra .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
 }
 
 .ts {
